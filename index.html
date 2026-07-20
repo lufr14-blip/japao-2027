@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japão 2027 — Primavera & Zen · Guia da Família</title>
+<meta name="description" content="Guia da viagem em família ao Japão — março de 2027. Roteiro dia a dia por Osaka, Koyasan, Kyoto, Shirakawa-go, Hakone e Tóquio, com dicas de restaurantes, japonês de bolso e checklist.">
+<meta property="og:title" content="Japão 2027 — Primavera & Zen · Guia da Família">
+<meta property="og:description" content="16 dias entre neon e silêncio: roteiro completo, onde comer, japonês de bolso e checklist da viagem.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/shinjukugyoen.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF7F4; --ink:#221D1B; --shu:#C8412F; --moss:#5B6B4E; --gold:#B08D57;
+  --mut:#7C726C; --line:#E8DCD5; --card:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;font-size:16.5px;line-height:1.65}
+h1,h2,h3{font-family:'Shippori Mincho',serif;line-height:1.25}
+.mono{font-family:'IBM Plex Mono',monospace}
+img{display:block;max-width:100%}
+a{color:var(--shu)}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(251,247,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1080px;margin:0 auto;display:flex;gap:1.4rem;overflow-x:auto;padding:.8rem 1.2rem;white-space:nowrap}
+nav a{text-decoration:none;color:var(--ink);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+nav a:hover{color:var(--shu)}
+
+header{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;
+  background:linear-gradient(rgba(20,10,8,.25),rgba(20,10,8,.62)),url('img/shinjukugyoen.jpg') center/cover}
+header .in{max-width:1080px;margin:0 auto;padding:3.5rem 1.2rem;width:100%}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.35em;color:#EBC9A6;text-transform:uppercase}
+header h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;margin:.5rem 0 .8rem}
+header p{max-width:34rem;color:#F1E5DE}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:1.6rem;font-family:'IBM Plex Mono',monospace;font-size:.85rem;color:#EBC9A6}
+
+main{max-width:1080px;margin:0 auto;padding:0 1.2rem}
+section{padding:4.2rem 0 1rem}
+.sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
+section>h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700;margin:.4rem 0 1.6rem;position:relative;display:inline-block}
+.seal{display:inline-block;width:.85em;height:.85em;background:var(--shu);border-radius:3px;margin-left:.35em;transform:translateY(.08em) rotate(-4deg)}
+
+/* ROTA — linha de trem */
+.route{position:relative;margin:1rem 0 2rem;padding-left:1.9rem}
+.route::before{content:'';position:absolute;left:.55rem;top:.6rem;bottom:.6rem;width:4px;background:var(--shu);border-radius:2px}
+.stop{position:relative;padding:.65rem 0 .65rem .6rem}
+.stop::before{content:'';position:absolute;left:-1.62rem;top:1.15rem;width:15px;height:15px;border-radius:50%;background:var(--paper);border:4px solid var(--shu)}
+.stop .when{font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--shu);font-weight:500}
+.stop b{font-family:'Shippori Mincho',serif;font-size:1.2rem;font-weight:700}
+.stop span{color:var(--mut);font-size:.95rem}
+
+/* Dia a dia */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:.9rem;overflow:hidden}
+summary{cursor:pointer;padding:1rem 1.2rem;display:flex;align-items:baseline;gap:.9rem;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary .d{font-family:'IBM Plex Mono',monospace;color:var(--shu);font-size:.85rem;min-width:6.2rem;font-weight:500}
+summary b{font-family:'Shippori Mincho',serif;font-size:1.05rem}
+summary::after{content:'＋';margin-left:auto;color:var(--gold);font-size:1rem}
+details[open] summary::after{content:'－'}
+details .body{padding:0 1.2rem 1.1rem;color:#3E3733;font-size:.97rem}
+details .body p{margin:.45rem 0}
+details .body b{color:var(--ink)}
+.cityhead{position:relative;margin:2.4rem 0 1rem;border-radius:16px;overflow:hidden;min-height:170px;display:flex;align-items:flex-end;color:#fff;background-size:cover;background-position:center}
+.cityhead::before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(15,8,6,.05) 30%,rgba(15,8,6,.66))}
+.cityhead .ct{position:relative;padding:1rem 1.3rem;display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;width:100%}
+.cityhead h3{font-size:1.6rem}
+.cityhead .mono{color:#EBC9A6;font-size:.82rem}
+
+/* grids */
+.grid{display:grid;gap:1.2rem}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.card .pad{padding:1.1rem 1.2rem 1.3rem}
+.card h3{font-size:1.15rem;margin-bottom:.4rem}
+.card .tag{font-family:'IBM Plex Mono',monospace;font-size:.75rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase}
+.card p{font-size:.95rem;color:#3E3733;margin-top:.35rem}
+.card .price{font-weight:600;margin-top:.6rem}
+
+/* tabela orçamento */
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line);font-size:.95rem}
+th{background:var(--shu);color:#fff;text-align:left;padding:.7rem 1rem;font-weight:600}
+th:last-child,td:last-child{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:.88rem}
+td{padding:.62rem 1rem;border-top:1px solid var(--line)}
+tr.total td{font-weight:700;background:#F6EEE9}
+.bignum{font-family:'Shippori Mincho',serif;font-size:clamp(1.9rem,4vw,2.6rem);color:var(--shu);font-weight:800}
+
+/* glossário / frases */
+dl{display:grid;gap:.15rem .9rem;grid-template-columns:max-content 1fr;font-size:.95rem}
+dt{font-weight:600;color:var(--moss)}
+dd{color:#3E3733}
+@media(max-width:600px){dl{grid-template-columns:1fr}dd{margin-bottom:.5rem}}
+.cols{columns:2;column-gap:2.5rem}
+@media(max-width:760px){.cols{columns:1}}
+.phrase{break-inside:avoid;margin-bottom:.8rem}
+.phrase b{display:block}
+.phrase .say{font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--shu)}
+.phrase .mean{color:var(--mut);font-size:.9rem}
+
+.note{background:#F3EFE7;border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:1rem 1.2rem;font-size:.95rem;margin:1.4rem 0}
+.note b{color:var(--ink)}
+ul.clean{list-style:none}
+ul.clean li{padding:.35rem 0 .35rem 1.4rem;position:relative}
+ul.clean li::before{content:'—';position:absolute;left:0;color:var(--shu)}
+
+.masonry{columns:3;column-gap:1rem}
+@media(max-width:860px){.masonry{columns:2}}
+@media(max-width:520px){.masonry{columns:1}}
+.masonry figure{break-inside:avoid;margin-bottom:1rem;border-radius:14px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.masonry img{width:100%}
+.masonry figcaption{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);padding:.55rem .8rem}
+footer{margin-top:4rem;border-top:1px solid var(--line);padding:2.5rem 1.2rem;text-align:center;color:var(--mut);font-size:.85rem}
+footer .jp{font-family:'Shippori Mincho',serif;color:var(--shu);font-size:1.1rem;margin-bottom:.4rem}
+
+html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+html.js .reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){html.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav><div class="in">
+  <a href="#rota">Rota</a><a href="#roteiro">Dia a dia</a><a href="#imersoes">Imersões</a>
+  <a href="#hospedagens">Hospedagens</a><a href="#comer">Onde comer</a><a href="#guias">Guias</a>
+  <a href="#postais">Postais</a><a href="#pratico">Prático</a><a href="#glossario">Glossário</a><a href="#japones">Japonês</a><a href="#checklist">Checklist</a>
+</div></nav>
+
+<header>
+  <div class="in">
+    <div class="eyebrow">Guia da família · proposta aprovada?</div>
+    <h1>Japão — Primavera &amp; Zen</h1>
+    <p>Dezesseis dias entre neon e silêncio: Osaka, uma noite no monastério de Koyasan, Kyoto e seu interior, a vila de Shirakawa-go, o ryokan de Hakone e as primeiras cerejeiras de Tóquio.</p>
+    <div class="hero-meta"><span>10 → 26 · MAR · 2027</span><span>4 VIAJANTES</span><span>6 DESTINOS</span><span>15 NOITES</span></div>
+  </div>
+</header>
+
+<main>
+
+<section id="rota" class="reveal">
+  <div class="sec-eyebrow">Visão geral</div>
+  <h2>A rota<span class="seal"></span></h2>
+  <div class="route">
+    <div class="stop"><div class="when">11–13/03</div><b>Osaka</b> · <span>2 noites — Conrad Osaka</span></div>
+    <div class="stop"><div class="when">13–14/03</div><b>Monte Koya</b> · <span>1 noite — templo Eko-in (shukubo)</span></div>
+    <div class="stop"><div class="when">14–19/03</div><b>Kyoto</b> · <span>5 noites — Nohga Hotel Kiyomizu</span></div>
+    <div class="stop"><div class="when">19–20/03</div><b>Shirakawa-go</b> · <span>1 noite — casa gassho-zukuri</span></div>
+    <div class="stop"><div class="when">20–21/03</div><b>Hakone</b> · <span>1 noite — ryokan Gora Kadan</span></div>
+    <div class="stop"><div class="when">21–26/03</div><b>Tóquio</b> · <span>5 noites — Hotel Chinzanso</span></div>
+  </div>
+  <div class="note"><b>Por que a rota é invertida?</b> A floração de Tóquio começa por volta de 24/03 — terminando lá, pegamos as primeiras cerejeiras. No caminho: festivais de ameixeira, cerejeiras precoces e o Japão profundo.</div>
+</section>
+
+<section id="roteiro" class="reveal">
+  <div class="sec-eyebrow">Programação completa</div>
+  <h2>Dia a dia<span class="seal"></span></h2>
+
+  <div class="cityhead" style="background-image:url('img/dotonbori.jpg')"><div class="ct"><h3>Osaka</h3><span class="mono">11–13/03 · Conrad Osaka</span></div></div>
+  <details open><summary><span class="d">Qui 11/03</span><b>Chegada</b></summary><div class="body">
+    <p>Chegada no Kansai (KIX), trem Nankai Rapi:t até Namba e check-in no Conrad, no alto da torre de Nakanoshima.</p>
+    <p><b>Noite:</b> Dotonbori — neon, takoyaki e jantar leve. Cama cedo por causa do fuso.</p></div></details>
+  <details><summary><span class="d">Sex 12/03</span><b>O melhor de Osaka em um dia</b></summary><div class="body">
+    <p><b>Manhã:</b> Castelo de Osaka com o jardim de ameixeiras (ume) em plena floração.</p>
+    <p><b>Tarde:</b> mercado Kuromon (almoço nas bancas) e Shinsaibashi.</p>
+    <p><b>Noite:</b> pôr do sol no Umeda Sky Building; kushikatsu em Shinsekai.</p></div></details>
+
+  <div class="cityhead" style="background-image:url('img/koyasan.jpg')"><div class="ct"><h3>Monte Koya</h3><span class="mono">13–14/03 · templo Eko-in</span></div></div>
+  <details><summary><span class="d">Sáb 13/03</span><b>Subida à montanha sagrada</b></summary><div class="body">
+    <p>Malas grandes seguem por takkyubin Osaka → Kyoto; subimos só com mochilas: trem Nankai + funicular (~2h).</p>
+    <p><b>Tarde:</b> complexo Danjo Garan e o cemitério de Okunoin na floresta de cedros milenares — com tour noturno guiado em inglês saindo do próprio templo.</p>
+    <p><b>Noite:</b> jantar shojin ryori (culinária monástica) servido no quarto de tatame.</p></div></details>
+  <details><summary><span class="d">Dom 14/03</span><b>Amanhecer com os monges</b></summary><div class="body">
+    <p><b>6h30:</b> cerimônia matinal, ritual do fogo (goma) e meditação ajikan.</p>
+    <p><b>Manhã:</b> descida e trem a Kyoto (~2h30); check-in no Nohga.</p>
+    <p><b>Fim de tarde:</b> primeiro passeio por Gion e jantar nas vielas de Pontocho.</p></div></details>
+
+  <div class="cityhead" style="background-image:url('img/fushimi.jpg')"><div class="ct"><h3>Kyoto</h3><span class="mono">14–19/03 · Nohga Hotel Kiyomizu</span></div></div>
+  <details><summary><span class="d">Seg 15/03</span><b>Leste histórico e Fushimi</b></summary><div class="body">
+    <p><b>Bem cedo:</b> Fushimi Inari antes das 8h, até o mirante Yotsutsuji.</p>
+    <p><b>Tarde:</b> Kiyomizu-dera e as ruas Sannenzaka/Ninenzaka.</p></div></details>
+  <details><summary><span class="d">Ter 16/03</span><b>Rural: Miyama</b></summary><div class="body">
+    <p>Dia inteiro na vila de casas de telhado de palha (Kayabuki no Sato), com guia brasileiro e carro: museu folclórico, almoço caseiro, artesanato.</p></div></details>
+  <details><summary><span class="d">Qua 17/03</span><b>O dia zen</b></summary><div class="body">
+    <p><b>8h em ponto:</b> Ryoan-ji na abertura — o jardim seco de 15 pedras em silêncio, antes das excursões.</p>
+    <p><b>9h30:</b> zazen guiado em inglês no templo Shunkoin (Myoshin-ji), a 10 min a pé.</p>
+    <p><b>Tarde:</b> Kinkaku-ji e as ameixeiras do Kitano Tenmangu.</p></div></details>
+  <details><summary><span class="d">Qui 18/03</span><b>Rural: Uji e a cerimônia do chá</b></summary><div class="body">
+    <p><b>Manhã:</b> Byodo-in e caminhada à beira-rio.</p>
+    <p><b>Meio-dia:</b> cerimônia do chá na casa Taihoan — municipal, pequena e genuína (¥1.000, reservar).</p>
+    <p><b>Tarde:</b> moer o próprio matcha e degustar nas casas centenárias; opcional Wazuka.</p></div></details>
+  <details><summary><span class="d">Sex 19/03</span><b>Arashiyama e partida</b></summary><div class="body">
+    <p><b>8h:</b> bambuzal de Arashiyama e templo Tenryu-ji.</p>
+    <p><b>12h:</b> malas por takkyubin Kyoto → Tóquio; Thunderbird a Kanazawa + ônibus a Shirakawa-go (chegada ~17h30).</p>
+    <p><b>Noite:</b> jantar na irori da casa gassho, com a família anfitriã.</p></div></details>
+
+  <div class="cityhead" style="background-image:url('img/shirakawago.jpg')"><div class="ct"><h3>Shirakawa-go</h3><span class="mono">19–20/03 · minshuku gassho-zukuri</span></div></div>
+  <details><summary><span class="d">Sáb 20/03</span><b>A vila patrimônio da UNESCO</b></summary><div class="body">
+    <p><b>Manhã:</b> vila de Ogimachi ao amanhecer, antes das excursões, e mirante Shiroyama — possivelmente com neve nos telhados.</p>
+    <p><b>13h:</b> ônibus a Toyama + Hokuriku Shinkansen + trem a Gora. Chegada ao ryokan ~18h30, direto para o onsen e o kaiseki.</p></div></details>
+
+  <div class="cityhead" style="background-image:url('img/fuji_ashi.jpg')"><div class="ct"><h3>Hakone</h3><span class="mono">20–21/03 · Gora Kadan</span></div></div>
+  <details><summary><span class="d">Dom 21/03</span><b>Fuji e chegada a Tóquio</b></summary><div class="body">
+    <p><b>Manhã:</b> banho ao ar livre ao acordar; teleférico sobre Owakudani e barco no lago Ashi com o Fuji ao fundo.</p>
+    <p><b>Fim de tarde:</b> Romancecar a Shinjuku; check-in no Chinzanso.</p></div></details>
+
+  <div class="cityhead" style="background-image:url('img/shibuya.jpg')"><div class="ct"><h3>Tóquio</h3><span class="mono">21–26/03 · Hotel Chinzanso Tokyo</span></div></div>
+  <details><summary><span class="d">Seg 22/03</span><b>Asakusa e tradição</b></summary><div class="body">
+    <p>Senso-ji cedo, rua Nakamise e a margem do rio Sumida. À tarde, Kappabashi ou Akihabara. Noite nas izakayas da Hoppy Street.</p></div></details>
+  <details><summary><span class="d">Ter 23/03</span><b>Harajuku e Shibuya</b></summary><div class="body">
+    <p>Meiji Jingu e Omotesando; Shibuya Sky ao pôr do sol (ingresso antecipado); noite em Omoide Yokocho.</p></div></details>
+  <details><summary><span class="d">Qua 24/03</span><b>Jardins e primeiras flores</b></summary><div class="body">
+    <p>Shinjuku Gyoen — cerejeiras precoces e, com sorte, o início da floração principal. Ueno e Museu Nacional à tarde. À noite, o jardim iluminado do Chinzanso.</p></div></details>
+  <details><summary><span class="d">Qui 25/03</span><b>Palácio, Ginza e despedida</b></summary><div class="body">
+    <p>Chidorigafuchi e Palácio Imperial; Ginza, depachika e teamLab Planets. Jantar de encerramento no Miyuki, com vista do jardim.</p></div></details>
+  <details><summary><span class="d">Sex 26/03</span><b>Retorno</b></summary><div class="body">
+    <p>Voo de volta por Haneda/Narita. Deixem espaço na mala.</p></div></details>
+  <div class="note"><b>O que saiu para caber a imersão:</b> Himeji, Nara e Asuka. Se Nara for inegociável, pode substituir a tarde de 15/03.</div>
+</section>
+
+<section id="imersoes" class="reveal">
+  <div class="sec-eyebrow">Os pedidos da Luana</div>
+  <h2>Imersões<span class="seal"></span></h2>
+  <div class="grid g3">
+    <div class="card"><img src="img/koyasan.jpg" alt="Koyasan" loading="lazy"><div class="pad">
+      <div class="tag">13–14/03</div><h3>Noite no monastério</h3>
+      <p>Templo Eko-in, em Koyasan: shojin ryori, tour noturno de Okunoin, ritual do fogo e meditação ao amanhecer.</p></div></div>
+    <div class="card"><img src="img/ryoanji.jpg" alt="Ryoan-ji" loading="lazy"><div class="pad">
+      <div class="tag">17/03 · 8h</div><h3>Ryoan-ji + zazen</h3>
+      <p>O jardim seco na abertura, em silêncio — e zazen guiado em inglês no templo Shunkoin, a 10 minutos a pé.</p></div></div>
+    <div class="card"><img src="img/uji.jpg" alt="Uji" loading="lazy"><div class="pad">
+      <div class="tag">18/03</div><h3>Cerimônia do chá</h3>
+      <p>Casa Taihoan, em Uji: municipal, pequena e genuína — tatame, silêncio e o chá preparado diante de vocês.</p></div></div>
+    <div class="card"><img src="img/miyama.jpg" alt="Miyama" loading="lazy"><div class="pad">
+      <div class="tag">16/03</div><h3>Miyama rural</h3>
+      <p>Vilarejo habitado de casas kayabuki entre montanhas e arrozais, com guia em português e almoço caseiro.</p></div></div>
+    <div class="card"><img src="img/shirakawago.jpg" alt="Shirakawa-go" loading="lazy"><div class="pad">
+      <div class="tag">19–20/03</div><h3>Noite na casa gassho</h3>
+      <p>Shirakawa-go, patrimônio da UNESCO: futon no tatame e jantar na irori com a família anfitriã. Rústico e inesquecível.</p></div></div>
+    <div class="card"><img src="img/hakone.jpg" alt="Ryokan em Hakone" loading="lazy"><div class="pad">
+      <div class="tag">20–21/03</div><h3>O ryokan clássico</h3>
+      <p>Gora Kadan, antiga residência imperial de verão: onsen ao ar livre, kaiseki e omotenashi de manual.</p></div></div>
+  </div>
+</section>
+
+<section id="hospedagens" class="reveal">
+  <div class="sec-eyebrow">2 quartos duplos · 15 noites</div>
+  <h2>Hospedagens<span class="seal"></span></h2>
+  <div class="grid g3">
+    <div class="card"><div class="pad"><div class="tag">Osaka · 2 noites</div><h3>Conrad Osaka ★5</h3><p>Lobby no 40º andar, vistas da cidade inteira.</p><p class="price">R$ 5,6–8,0 mil</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Koyasan · 1 noite</div><h3>Templo Eko-in</h3><p>Shukubo com refeições monásticas inclusas.</p><p class="price">R$ 1,9–3,1 mil</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Kyoto · 5 noites</div><h3>Nohga Kiyomizu ★4</h3><p>Em Gion, nota 9,8 — a pé do leste histórico.</p><p class="price">R$ 6,2–10,0 mil</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Shirakawa-go · 1 noite</div><h3>Casa gassho</h3><p>Minshuku tradicional com jantar na irori.</p><p class="price">R$ 1,5–1,9 mil</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Hakone · 1 noite</div><h3>Gora Kadan</h3><p>Ryokan Relais &amp; Châteaux, meia pensão.</p><p class="price">R$ 5,6–9,3 mil</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Tóquio · 5 noites</div><h3>Hotel Chinzanso ★5</h3><p>Dentro de um jardim histórico com cerejeiras.</p><p class="price">R$ 14–23 mil</p></div></div>
+  </div>
+  <div class="note"><b>Ordem de urgência:</b> 1) Gora Kadan e casa gassho (pouquíssimos quartos) · 2) Eko-in · 3) Chinzanso · 4) demais.</div>
+</section>
+
+<section id="comer" class="reveal">
+  <div class="sec-eyebrow">Itadakimasu!</div>
+  <h2>Onde comer<span class="seal"></span></h2>
+
+  <h3 style="margin:1.2rem 0 .8rem;font-size:1.25rem">Osaka — a cozinha do Japão</h3>
+  <div class="grid g3">
+    <div class="card"><div class="pad"><div class="tag">Dotonbori · okonomiyaki</div><h3>Mizuno</h3><p>Desde 1945, a panqueca de Osaka feita na chapa diante de vocês. Fila anda rápido; vale cada minuto.</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Shinsekai · kushikatsu</div><h3>Daruma</h3><p>A casa que inventou o espetinho empanado, em 1929. Regra de ouro: nunca molhar duas vezes no molho.</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Mercado · almoço</div><h3>Kuromon Ichiba</h3><p>Comer de banca em banca: vieiras grelhadas, sashimi de atum, morango branco. Almoço perfeito do dia 12.</p></div></div>
+  </div>
+
+  <h3 style="margin:2rem 0 .8rem;font-size:1.25rem">Kyoto &amp; Uji — tradição à mesa</h3>
+  <div class="grid g3">
+    <div class="card"><div class="pad"><div class="tag">Centro · soba</div><h3>Honke Owariya</h3><p>Fundado em 1465 — o restaurante que servia soba aos monges e à corte imperial. Peçam o hourai soba.</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Nishiki · mercado</div><h3>Mercado Nishiki</h3><p>"A cozinha de Kyoto": tofu, tsukemono, tamagoyaki e chá. Ótimo para beliscar entre os templos.</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Uji · matcha</div><h3>Nakamura Tokichi</h3><p>Casa de chá de 1854: soba de matcha e o famoso parfait. Encaixa perfeito após a cerimônia na Taihoan.</p></div></div>
+  </div>
+
+  <h3 style="margin:2rem 0 .8rem;font-size:1.25rem">Tóquio — do balcão à despedida</h3>
+  <div class="grid g3">
+    <div class="card"><div class="pad"><div class="tag">Asakusa · tempurá</div><h3>Daikokuya</h3><p>Tendon (tempurá sobre arroz) desde 1887, a poucos passos do Senso-ji — almoço do dia 22.</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Shinjuku · yakitori</div><h3>Omoide Yokocho</h3><p>O beco dos anos 40: espetinhos na brasa, fumaça e balcões de 6 lugares. Sentar onde houver vaga.</p></div></div>
+    <div class="card"><div class="pad"><div class="tag">Omotesando · tonkatsu</div><h3>Maisen</h3><p>O tonkatsu mais famoso da cidade, servido num antigo balneário — perto do Meiji Jingu, dia 23.</p></div></div>
+  </div>
+
+  <div class="note"><b>Dicas de ouro:</b> konbini (7-Eleven, Lawson) salvam café da manhã e lanches — onigiri e sando de ovo são ótimos · nos depachika (subsolo das lojas de departamento) monta-se um jantar de luxo por pouco · ramen se pede na máquina de tickets à entrada · não se deixa gorjeta no Japão, nunca.</div>
+</section>
+
+<section id="guias" class="reveal">
+  <div class="sec-eyebrow">Para enriquecer a experiência</div>
+  <h2>Guias em português<span class="seal"></span></h2>
+  <div class="grid g2">
+    <div class="card"><div class="pad"><h3>Coisas do Japão</h3><p>Equipe de guias brasileiros há 20+ anos em Tóquio, Kyoto, Osaka e Nara.</p><p class="mono" style="font-size:.85rem;margin-top:.5rem">coisasdojapao.com · WhatsApp +81 80-8840-9662</p></div></div>
+    <div class="card"><div class="pad"><h3>O Guia do Japão (Hiro)</h3><p>Especialista em Kyoto (300+ tours), história e cultura; consultoria por Zoom.</p><p class="mono" style="font-size:.85rem;margin-top:.5rem">oguiadojapao.com</p></div></div>
+    <div class="card"><div class="pad"><h3>Hachi Japan</h3><p>Tours de carro privativo — ideal para os dias rurais e o conforto dos pais.</p><p class="mono" style="font-size:.85rem;margin-top:.5rem">hachijapan.com</p></div></div>
+    <div class="card"><div class="pad"><h3>GoHanTour</h3><p>Tours gastronômicos em português em Tóquio: Tsukiji, izakayas e bairros locais.</p><p class="mono" style="font-size:.85rem;margin-top:.5rem">gohantours.com</p></div></div>
+  </div>
+</section>
+
+<section id="pratico" class="reveal">
+  <div class="sec-eyebrow">Logística</div>
+  <h2>Informações práticas<span class="seal"></span></h2>
+  <ul class="clean">
+    <li><b>Voos:</b> multidestino GRU→Osaka (KIX) / Tóquio→GRU. Faixa atual: R$ 6.000–9.000/pessoa; promoções Qatar a partir de R$ 5.880.</li>
+    <li><b>Dinheiro:</b> ¥1.000 ≈ R$ 31. Levar espécie (¥40–60 mil/casal) — Koyasan e Shirakawa-go são quase só dinheiro vivo. Saques no 7-Eleven; Wise/Nomad em iene.</li>
+    <li><b>Suica no celular</b> antes de embarcar; funciona em todas as cidades e lojas.</li>
+    <li><b>JR Pass não compensa:</b> a rota usa muitas linhas privadas; trechos JR avulsos somam ~¥28.000/pessoa.</li>
+    <li><b>Malas por takkyubin</b> nos trechos Koyasan e Shirakawa-go→Hakone — circulamos só com mochilas de pernoite.</li>
+    <li><b>Clima de março:</b> 6–15 °C nas cidades; 0–8 °C em Koyasan e Shirakawa-go (possível neve). Casaco quente e calçado fácil de tirar.</li>
+    <li><b>Visto:</b> brasileiros não precisam (turismo até 90 dias). Preencher o Visit Japan Web na semana do voo.</li>
+    <li><b>Seguro viagem</b> (~R$ 400–500/pessoa) e eSIM (Ubigi/Airalo, ~R$ 100–150).</li>
+  </ul>
+</section>
+
+<section id="postais" class="reveal">
+  <div class="sec-eyebrow">O que vem por aí</div>
+  <h2>Postais do roteiro<span class="seal"></span></h2>
+  <div class="masonry">
+    <figure><img src="img/osaka_castle.jpg" alt="Castelo de Osaka entre flores" loading="lazy"><figcaption>Castelo de Osaka</figcaption></figure>
+    <figure><img src="img/kiyomizu.jpg" alt="Kiyomizu-dera" loading="lazy"><figcaption>Kiyomizu-dera, Kyoto</figcaption></figure>
+    <figure><img src="img/arashiyama.jpg" alt="Bambuzal de Arashiyama" loading="lazy"><figcaption>Arashiyama</figcaption></figure>
+    <figure><img src="img/uji_tea.jpg" alt="Campos de chá" loading="lazy"><figcaption>Campos de chá</figcaption></figure>
+    <figure><img src="img/chidorigafuchi.jpg" alt="Cerejeiras em Chidorigafuchi" loading="lazy"><figcaption>Chidorigafuchi, Tóquio</figcaption></figure>
+    <figure><img src="img/chinzanso.jpg" alt="Jardim do Chinzanso" loading="lazy"><figcaption>Jardim do Chinzanso</figcaption></figure>
+    <figure><img src="img/nara.jpg" alt="Cervos de Nara" loading="lazy"><figcaption>Nara — quem sabe?</figcaption></figure>
+    <figure><img src="img/umeda.jpg" alt="Osaka do alto" loading="lazy"><figcaption>Osaka do alto</figcaption></figure>
+    <figure><img src="img/shinjukugyoen.jpg" alt="Sakura em Shinjuku Gyoen" loading="lazy"><figcaption>Shinjuku Gyoen</figcaption></figure>
+  </div>
+</section>
+
+<section id="glossario" class="reveal">
+  <div class="sec-eyebrow">Para entender tudo</div>
+  <h2>Glossário<span class="seal"></span></h2>
+  <dl>
+    <dt>Sakura</dt><dd>cerejeira; a flor e a própria temporada de floração.</dd>
+    <dt>Ume</dt><dd>ameixeira japonesa; floresce antes da sakura.</dd>
+    <dt>Hanami</dt><dd>contemplar as flores — o piquenique sob as cerejeiras.</dd>
+    <dt>Ryokan</dt><dd>hospedaria tradicional com tatame, futon e refeições.</dd>
+    <dt>Onsen</dt><dd>banho termal; banha-se sem roupa, após lavar-se sentado.</dd>
+    <dt>Kaiseki</dt><dd>jantar tradicional de vários pratos sazonais.</dd>
+    <dt>Yukata</dt><dd>robe de algodão do ryokan — use sem cerimônia.</dd>
+    <dt>Shukubo</dt><dd>hospedagem dentro de um templo budista.</dd>
+    <dt>Shojin ryori</dt><dd>culinária vegetariana dos monges.</dd>
+    <dt>Zazen</dt><dd>meditação zen sentada.</dd>
+    <dt>Karesansui</dt><dd>jardim seco de pedras, como o do Ryoan-ji.</dd>
+    <dt>Goma</dt><dd>ritual do fogo celebrado ao amanhecer em Koyasan.</dd>
+    <dt>Ajikan</dt><dd>meditação da escola Shingon, praticada em Koyasan.</dd>
+    <dt>Gassho-zukuri</dt><dd>casa de telhado íngreme de palha de Shirakawa-go.</dd>
+    <dt>Minshuku</dt><dd>pousada familiar simples com refeições caseiras.</dd>
+    <dt>Irori</dt><dd>lareira aberta no chão das casas tradicionais.</dd>
+    <dt>Izakaya</dt><dd>bar japonês de petiscos e bebidas.</dd>
+    <dt>Takoyaki</dt><dd>bolinhos de polvo, símbolo de Osaka.</dd>
+    <dt>Kushikatsu</dt><dd>espetinhos empanados e fritos, de Osaka.</dd>
+    <dt>Matcha</dt><dd>chá verde em pó — a especialidade de Uji.</dd>
+    <dt>Konbini</dt><dd>loja de conveniência 24h com comida boa e barata.</dd>
+    <dt>Depachika</dt><dd>andar gastronômico das lojas de departamento.</dd>
+    <dt>Takkyubin</dt><dd>envio de bagagem porta a porta.</dd>
+    <dt>Shinkansen</dt><dd>trem-bala.</dd>
+    <dt>Torii</dt><dd>portal vermelho de santuário xintoísta.</dd>
+    <dt>Machiya</dt><dd>casa urbana tradicional de madeira de Kyoto.</dd>
+    <dt>Omotenashi</dt><dd>a hospitalidade japonesa: antecipar sem que se peça.</dd>
+  </dl>
+</section>
+
+<section id="japones" class="reveal">
+  <div class="sec-eyebrow">Sobrevivência com sorriso</div>
+  <h2>Japonês de bolso<span class="seal"></span></h2>
+  <div class="cols">
+    <div class="phrase"><b>Bom dia</b><span class="say">Ohayō gozaimasu · "ô-ra-iô gozaimás"</span></div>
+    <div class="phrase"><b>Olá / boa tarde</b><span class="say">Konnichiwa · "kon-nitchi-uá"</span></div>
+    <div class="phrase"><b>Boa noite (chegando)</b><span class="say">Konbanwa · "kon-ban-uá"</span></div>
+    <div class="phrase"><b>Boa noite (dormir)</b><span class="say">Oyasumi nasai · "o-iá-sumi nassai"</span></div>
+    <div class="phrase"><b>Muito obrigado</b><span class="say">Arigatō gozaimasu · "arigatô gozaimás"</span></div>
+    <div class="phrase"><b>Com licença / desculpe / moço!</b><span class="say">Sumimasen · "sumimassên"</span><span class="mean">A palavra mais útil do Japão.</span></div>
+    <div class="phrase"><b>Por favor</b><span class="say">Onegai shimasu · "onegai-shimás"</span></div>
+    <div class="phrase"><b>Sim / não</b><span class="say">Hai / Iie · "rái / i-ê"</span></div>
+    <div class="phrase"><b>Está tudo bem, não precisa</b><span class="say">Daijōbu desu · "dai-jôbu dess"</span></div>
+    <div class="phrase"><b>Você fala inglês?</b><span class="say">Eigo o hanasemasu ka? · "êigo o ranassemás ká"</span></div>
+    <div class="phrase"><b>Não entendo japonês</b><span class="say">Nihongo ga wakarimasen</span></div>
+    <div class="phrase"><b>Onde fica ___?</b><span class="say">___ wa doko desu ka? · "uá dôko dess ká"</span></div>
+    <div class="phrase"><b>Onde é o banheiro?</b><span class="say">Toire wa doko desu ka?</span></div>
+    <div class="phrase"><b>Onde é a estação?</b><span class="say">Eki wa doko desu ka?</span></div>
+    <div class="phrase"><b>Estou perdido</b><span class="say">Michi ni mayoimashita</span></div>
+    <div class="phrase"><b>Quanto custa?</b><span class="say">Ikura desu ka? · "icura dess ká"</span></div>
+    <div class="phrase"><b>Posso pagar com cartão?</b><span class="say">Kaado de haraemasu ka?</span></div>
+    <div class="phrase"><b>Este aqui, por favor</b><span class="say">Kore o kudasai · "corê o cudassai"</span><span class="mean">Apontando — funciona sempre.</span></div>
+    <div class="phrase"><b>O que recomenda?</b><span class="say">Osusume wa? · "ossussumê uá"</span></div>
+    <div class="phrase"><b>Tem cardápio em inglês?</b><span class="say">Eigo no menyū wa arimasu ka?</span></div>
+    <div class="phrase"><b>Água, por favor</b><span class="say">Mizu o kudasai</span><span class="mean">ocha = chá · kōhī = café</span></div>
+    <div class="phrase"><b>Antes de comer</b><span class="say">Itadakimasu · "itadakimás"</span></div>
+    <div class="phrase"><b>Delicioso!</b><span class="say">Oishii! · "oishí!"</span></div>
+    <div class="phrase"><b>Ao terminar / ao sair</b><span class="say">Gochisōsama deshita · "gotchissô-sama deshtá"</span></div>
+    <div class="phrase"><b>Saúde! (brinde)</b><span class="say">Kanpai! · "campai!"</span></div>
+    <div class="phrase"><b>Socorro!</b><span class="say">Tasukete! · "tasketê!"</span><span class="mean">Emergências: 110 polícia · 119 ambulância</span></div>
+  </div>
+</section>
+
+<section id="checklist" class="reveal">
+  <div class="sec-eyebrow">Reservas e prazos</div>
+  <h2>Checklist<span class="seal"></span></h2>
+  <ul class="clean">
+    <li><b>Agora:</b> voos 10/03 e 26/03 · Gora Kadan e casa gassho (Koemon/Magoemon — esgotam com ~1 ano) · Eko-in · demais hotéis canceláveis · fechar guias.</li>
+    <li><b>Nov–jan:</b> seguro viagem · passaportes (6+ meses) · zazen no Shunkoin · cerimônia do chá Taihoan · acompanhar a previsão de floração.</li>
+    <li><b>Fevereiro:</b> Shibuya Sky e teamLab · Thunderbird, Hokuriku Shinkansen e Romancecar · ônibus de Shirakawa-go (reserva obrigatória).</li>
+    <li><b>Semana do voo:</b> eSIM · Suica no celular · Visit Japan Web · mapas offline · ienes em espécie.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="jp">いってらっしゃい</div>
+  Guia da viagem em família · Japão, março de 2027 · fotos: Wikimedia Commons
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target);} }), { threshold: .08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
