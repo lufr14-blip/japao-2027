@@ -107,6 +107,28 @@ ul.clean{list-style:none}
 ul.clean li{padding:.35rem 0 .35rem 1.4rem;position:relative}
 ul.clean li::before{content:'—';position:absolute;left:0;color:var(--shu)}
 
+/* mapa da rota */
+.mapwrap{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.2rem;overflow-x:auto;margin-bottom:1.6rem}
+.mapwrap svg{min-width:660px;width:100%;height:auto;display:block}
+.map-city{font-family:'Shippori Mincho',serif;font-weight:700;font-size:19px;fill:var(--ink)}
+.map-date{font-family:'IBM Plex Mono',monospace;font-size:11.5px;fill:var(--shu)}
+.map-mode{font-family:'IBM Plex Mono',monospace;font-size:11px;fill:var(--mut)}
+.map-num{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;fill:#fff}
+.map-air{font-family:'IBM Plex Mono',monospace;font-size:10.5px;fill:var(--gold);letter-spacing:.08em}
+.golink{font-family:'IBM Plex Mono',monospace;font-size:.78rem;display:inline-block;margin-top:.6rem}
+.trecho-fare{font-family:'IBM Plex Mono',monospace;font-size:.82rem;color:var(--shu);margin-top:.5rem}
+.trecho-note{font-size:.88rem;color:var(--mut);margin-top:.35rem}
+
+/* vídeos */
+.vid{position:relative;cursor:pointer;aspect-ratio:16/9;background:#161210;overflow:hidden}
+.vid img{width:100%;height:100%;object-fit:cover;opacity:.94;transition:transform .4s ease}
+.vid:hover img{transform:scale(1.04)}
+.vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.vid .play span{width:62px;height:44px;background:var(--shu);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+.vid .play span::after{content:'';border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:3px}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.langtag{font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.1em;color:#fff;background:var(--moss);border-radius:4px;padding:.18rem .5rem;position:absolute;top:.6rem;right:.6rem;text-transform:uppercase}
+
 .masonry{columns:3;column-gap:1rem}
 @media(max-width:860px){.masonry{columns:2}}
 @media(max-width:520px){.masonry{columns:1}}
@@ -124,9 +146,9 @@ html.js .reveal.on{opacity:1;transform:none}
 <body>
 
 <nav><div class="in">
-  <a href="#rota">Rota</a><a href="#roteiro">Dia a dia</a><a href="#imersoes">Imersões</a>
+  <a href="#rota">Rota</a><a href="#mapa">Mapa</a><a href="#roteiro">Dia a dia</a><a href="#imersoes">Imersões</a>
   <a href="#hospedagens">Hospedagens</a><a href="#comer">Onde comer</a><a href="#guias">Guias</a>
-  <a href="#postais">Postais</a><a href="#pratico">Prático</a><a href="#glossario">Glossário</a><a href="#japones">Japonês</a><a href="#checklist">Checklist</a>
+  <a href="#postais">Postais</a><a href="#videos">Vídeos</a><a href="#filmes">Filmes</a><a href="#pratico">Prático</a><a href="#glossario">Glossário</a><a href="#japones">Japonês</a><a href="#checklist">Checklist</a>
 </div></nav>
 
 <header>
@@ -152,6 +174,113 @@ html.js .reveal.on{opacity:1;transform:none}
     <div class="stop"><div class="when">21–26/03</div><b>Tóquio</b> · <span>5 noites — Hotel Chinzanso</span></div>
   </div>
   <div class="note"><b>Por que a rota é invertida?</b> A floração de Tóquio começa por volta de 24/03 — terminando lá, pegamos as primeiras cerejeiras. No caminho: festivais de ameixeira, cerejeiras precoces e o Japão profundo.</div>
+</section>
+
+<section id="mapa" class="reveal">
+  <div class="sec-eyebrow">Trecho a trecho</div>
+  <h2>Mapa da viagem<span class="seal"></span></h2>
+  <div class="mapwrap">
+  <svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa esquemático da rota: Osaka, Monte Koya, Kyoto, Shirakawa-go, Hakone e Tóquio">
+    <path d="M60,480 Q95,435 148,392" fill="none" stroke="#B08D57" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+    <path d="M838,168 Q885,195 912,238" fill="none" stroke="#B08D57" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+    <path d="M152,394 Q190,447 252,478" fill="none" stroke="#C8412F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M257,472 Q300,370 262,258" fill="none" stroke="#C8412F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M263,246 Q330,130 442,98" fill="none" stroke="#C8412F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M456,100 Q610,140 676,294" fill="none" stroke="#C8412F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M686,296 Q765,245 824,180" fill="none" stroke="#C8412F" stroke-width="4" stroke-linecap="round"/>
+    <text x="42" y="492" font-size="17">✈</text>
+    <text x="912" y="252" font-size="17">✈</text>
+    <text class="map-air" x="30" y="514">GRU → KIX · 10/03</text>
+    <text class="map-air" x="790" y="275">HND/NRT → GRU · 26/03</text>
+    <g>
+      <circle cx="150" cy="390" r="12" fill="#C8412F"/><text class="map-num" x="150" y="394" text-anchor="middle">1</text>
+      <text class="map-city" x="132" y="382" text-anchor="end">Osaka</text>
+      <text class="map-date" x="132" y="399" text-anchor="end">11–13/03 · 2 noites</text>
+    </g>
+    <g>
+      <circle cx="255" cy="480" r="12" fill="#C8412F"/><text class="map-num" x="255" y="484" text-anchor="middle">2</text>
+      <text class="map-city" x="255" y="514" text-anchor="middle">Monte Koya</text>
+      <text class="map-date" x="255" y="531" text-anchor="middle">13–14/03 · 1 noite</text>
+    </g>
+    <g>
+      <circle cx="262" cy="252" r="12" fill="#C8412F"/><text class="map-num" x="262" y="256" text-anchor="middle">3</text>
+      <text class="map-city" x="243" y="247" text-anchor="end">Kyoto</text>
+      <text class="map-date" x="243" y="264" text-anchor="end">14–19/03 · 5 noites</text>
+    </g>
+    <g>
+      <circle cx="450" cy="98" r="12" fill="#C8412F"/><text class="map-num" x="450" y="102" text-anchor="middle">4</text>
+      <text class="map-city" x="450" y="70" text-anchor="middle">Shirakawa-go</text>
+      <text class="map-date" x="450" y="87" text-anchor="middle">19–20/03 · 1 noite</text>
+    </g>
+    <g>
+      <circle cx="681" cy="297" r="12" fill="#C8412F"/><text class="map-num" x="681" y="301" text-anchor="middle">5</text>
+      <text class="map-city" x="681" y="331" text-anchor="middle">Hakone</text>
+      <text class="map-date" x="681" y="348" text-anchor="middle">20–21/03 · 1 noite</text>
+    </g>
+    <g>
+      <circle cx="830" cy="173" r="12" fill="#C8412F"/><text class="map-num" x="830" y="177" text-anchor="middle">6</text>
+      <text class="map-city" x="830" y="138" text-anchor="middle">Tóquio</text>
+      <text class="map-date" x="830" y="155" text-anchor="middle">21–26/03 · 5 noites</text>
+    </g>
+    <text class="map-mode" x="167" y="452" text-anchor="end">trem + funicular · ~2h</text>
+    <text class="map-mode" x="298" y="368">trem · ~3h</text>
+    <text class="map-mode" x="330" y="146" text-anchor="end">trem + ônibus · ~4h30</text>
+    <text class="map-mode" x="600" y="170">ônibus + shinkansen · ~6h</text>
+    <text class="map-mode" x="782" y="262">Romancecar · 85min</text>
+  </svg>
+  </div>
+  <div class="grid g2">
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 1 · 11/03</div><h3>Aeroporto KIX → Osaka</h3>
+      <p>Trem Nankai Rapi:t direto do aeroporto até Namba.</p>
+      <p class="trecho-fare">~35 min · ¥1.490/pessoa</p>
+      <p class="trecho-note">Assentos 100% reservados, partidas a cada 30 min. O e-ticket comprado online sai um pouco mais barato.</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Kansai+International+Airport&amp;destination=Namba+Station+Osaka&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 2 · 13/03</div><h3>Osaka → Monte Koya</h3>
+      <p>Linha Nankai Koya de Namba a Gokurakubashi, funicular montanha acima e ônibus até o templo.</p>
+      <p class="trecho-fare">~2h · ~¥1.700/pessoa</p>
+      <p class="trecho-note">Compre o Koyasan World Heritage Ticket (~¥3.000): cobre ida, volta, funicular e os ônibus do monte por 2 dias.</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Namba+Station+Osaka&amp;destination=Koyasan+Station&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 3 · 14/03</div><h3>Monte Koya → Kyoto</h3>
+      <p>Funicular, Nankai até Namba, metrô Midosuji até Umeda e JR Special Rapid até Kyoto.</p>
+      <p class="trecho-fare">~3h · ~¥2.200/pessoa</p>
+      <p class="trecho-note">Com o World Heritage Ticket, a volta até Namba já está paga — restam só metrô + JR (~¥820).</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Koyasan+Station&amp;destination=Kyoto+Station&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 4 · 19/03</div><h3>Kyoto → Shirakawa-go</h3>
+      <p>Thunderbird até Tsuruga, Hokuriku Shinkansen até Kanazawa e ônibus Nohi até a vila.</p>
+      <p class="trecho-fare">~4h30 · ~¥10.000/pessoa</p>
+      <p class="trecho-note">Desde 2024 o Thunderbird termina em Tsuruga — baldeação fácil na mesma estação. O ônibus tem assento obrigatório: reservar 1 mês antes no Japan Bus Online.</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Kyoto+Station&amp;destination=Shirakawa-go+Bus+Terminal&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 5 · 20/03</div><h3>Shirakawa-go → Hakone</h3>
+      <p>Ônibus até Toyama, Hokuriku Shinkansen até Tóquio, Tokaido Shinkansen até Odawara e trem Hakone Tozan até Gora.</p>
+      <p class="trecho-fare">~6h · ~¥19.400/pessoa</p>
+      <p class="trecho-note">Só ~3 ônibus/dia para Toyama — reserve o das 13h. O trem Tozan sobe a serra em zigue-zague, com vista bonita dos dois lados.</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Shirakawa-go+Bus+Terminal&amp;destination=Gora+Station+Hakone&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 6 · 21/03</div><h3>Hakone → Tóquio</h3>
+      <p>Romancecar da Odakyu, direto de Hakone-Yumoto a Shinjuku.</p>
+      <p class="trecho-fare">~85 min · ~¥2.400/pessoa</p>
+      <p class="trecho-note">100% reservado; vendas abrem 1 mês antes. Os assentos panorâmicos do modelo GSE (janelão frontal) esgotam em minutos.</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Hakone-Yumoto+Station&amp;destination=Shinjuku+Station+Tokyo&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Trecho 7 · 26/03</div><h3>Tóquio → aeroporto</h3>
+      <p>Haneda: Yamanote + Tokyo Monorail (~40 min). Narita: N'EX direto de Tokyo Station (~1h).</p>
+      <p class="trecho-fare">¥700 (HND) · ¥3.070 (NRT)</p>
+      <p class="trecho-note">Monorail sem reserva, a cada 4–5 min. O N'EX é 100% reservado — compre antes e confirme o terminal.</p>
+      <a class="golink" href="https://www.google.com/maps/dir/?api=1&amp;origin=Shinjuku+Station+Tokyo&amp;destination=Haneda+Airport+Terminal+3&amp;travelmode=transit" target="_blank" rel="noopener">ver trajeto no Google Maps ↗</a>
+    </div></div>
+  </div>
+  <div class="note"><b>Malas leves nos trechos 2, 4 e 5:</b> as malas grandes viajam sozinhas por takkyubin (Osaka → Kyoto → Tóquio) — nesses dias circulamos só com mochilas de pernoite.</div>
 </section>
 
 <section id="roteiro" class="reveal">
@@ -193,7 +322,7 @@ html.js .reveal.on{opacity:1;transform:none}
     <p><b>Tarde:</b> moer o próprio matcha e degustar nas casas centenárias; opcional Wazuka.</p></div></details>
   <details><summary><span class="d">Sex 19/03</span><b>Arashiyama e partida</b></summary><div class="body">
     <p><b>8h:</b> bambuzal de Arashiyama e templo Tenryu-ji.</p>
-    <p><b>12h:</b> malas por takkyubin Kyoto → Tóquio; Thunderbird a Kanazawa + ônibus a Shirakawa-go (chegada ~17h30).</p>
+    <p><b>12h:</b> malas por takkyubin Kyoto → Tóquio; Thunderbird a Tsuruga, shinkansen a Kanazawa e ônibus a Shirakawa-go (chegada ~17h30).</p>
     <p><b>Noite:</b> jantar na irori da casa gassho, com a família anfitriã.</p></div></details>
 
   <div class="cityhead" style="background-image:url('img/shirakawago.jpg')"><div class="ct"><h3>Shirakawa-go</h3><span class="mono">19–20/03 · minshuku gassho-zukuri</span></div></div>
@@ -318,14 +447,130 @@ html.js .reveal.on{opacity:1;transform:none}
   <h2>Postais do roteiro<span class="seal"></span></h2>
   <div class="masonry">
     <figure><img src="img/osaka_castle.jpg" alt="Castelo de Osaka entre flores" loading="lazy"><figcaption>Castelo de Osaka</figcaption></figure>
+    <figure><img src="img/kuromon.jpg" alt="Mercado Kuromon Ichiba" loading="lazy"><figcaption>Mercado Kuromon, Osaka</figcaption></figure>
+    <figure><img src="img/shinsekai.jpg" alt="Shinsekai e a torre Tsutenkaku à noite" loading="lazy"><figcaption>Shinsekai, Osaka</figcaption></figure>
+    <figure><img src="img/okunoin.jpg" alt="Cemitério Okunoin entre cedros e musgo" loading="lazy"><figcaption>Okunoin, Koyasan</figcaption></figure>
     <figure><img src="img/kiyomizu.jpg" alt="Kiyomizu-dera" loading="lazy"><figcaption>Kiyomizu-dera, Kyoto</figcaption></figure>
+    <figure><img src="img/kinkakuji.jpg" alt="Pavilhão Dourado Kinkaku-ji refletido no lago" loading="lazy"><figcaption>Kinkaku-ji, Kyoto</figcaption></figure>
+    <figure><img src="img/gion.jpg" alt="Casas de madeira e lanternas em Gion" loading="lazy"><figcaption>Gion, Kyoto</figcaption></figure>
+    <figure><img src="img/pontocho.jpg" alt="Lanternas na viela de Pontocho" loading="lazy"><figcaption>Pontocho, Kyoto</figcaption></figure>
     <figure><img src="img/arashiyama.jpg" alt="Bambuzal de Arashiyama" loading="lazy"><figcaption>Arashiyama</figcaption></figure>
+    <figure><img src="img/byodoin.jpg" alt="Phoenix Hall do Byodo-in refletido no lago" loading="lazy"><figcaption>Byodo-in, Uji</figcaption></figure>
     <figure><img src="img/uji_tea.jpg" alt="Campos de chá" loading="lazy"><figcaption>Campos de chá</figcaption></figure>
+    <figure><img src="img/sensoji.jpg" alt="Portão Kaminarimon do Senso-ji" loading="lazy"><figcaption>Senso-ji, Asakusa</figcaption></figure>
+    <figure><img src="img/meijijingu.jpg" alt="Torii de madeira do Meiji Jingu" loading="lazy"><figcaption>Meiji Jingu, Tóquio</figcaption></figure>
+    <figure><img src="img/ginza.jpg" alt="Prédio Wako iluminado em Ginza" loading="lazy"><figcaption>Ginza à noite</figcaption></figure>
     <figure><img src="img/chidorigafuchi.jpg" alt="Cerejeiras em Chidorigafuchi" loading="lazy"><figcaption>Chidorigafuchi, Tóquio</figcaption></figure>
     <figure><img src="img/chinzanso.jpg" alt="Jardim do Chinzanso" loading="lazy"><figcaption>Jardim do Chinzanso</figcaption></figure>
     <figure><img src="img/nara.jpg" alt="Cervos de Nara" loading="lazy"><figcaption>Nara — quem sabe?</figcaption></figure>
     <figure><img src="img/umeda.jpg" alt="Osaka do alto" loading="lazy"><figcaption>Osaka do alto</figcaption></figure>
     <figure><img src="img/shinjukugyoen.jpg" alt="Sakura em Shinjuku Gyoen" loading="lazy"><figcaption>Shinjuku Gyoen</figcaption></figure>
+  </div>
+</section>
+
+<section id="videos" class="reveal">
+  <div class="sec-eyebrow">Para viajar antes de viajar</div>
+  <h2>Vídeos do roteiro<span class="seal"></span></h2>
+  <p style="max-width:44rem;color:#3E3733">Walking tours em 4K para "caminhar" pelas ruas que vamos visitar e vlogs brasileiros com dicas práticas. Clique em qualquer cartão para assistir aqui mesmo.</p>
+  <div class="grid g2" style="margin-top:1.4rem">
+    <div class="card">
+      <div class="vid" data-id="ZR7A2xJqPeA" role="button" tabindex="0" aria-label="Assistir: 10 coisas para se fazer em Osaka"><img src="https://i.ytimg.com/vi/ZR7A2xJqPeA/hqdefault.jpg" alt="Osaka à noite" loading="lazy"><span class="langtag">pt-br</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Osaka · Só Preciso Viajar</div><h3>10 coisas para fazer em Osaka</h3><p>Vlog brasileiro por Dotonbori, Shinsekai e a Tsutenkaku à noite — o que ver e o que comer.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="TYOO36P_M3M" role="button" tabindex="0" aria-label="Assistir: Kuromon Market walking tour"><img src="https://i.ytimg.com/vi/TYOO36P_M3M/hqdefault.jpg" alt="Mercado Kuromon" loading="lazy"><span class="langtag">4k · sem falas</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Osaka · The Japan Walk</div><h3>Mercado Kuromon em 4K</h3><p>Caminhada imersiva pelas bancas de comida de rua — para escolher o que provar no almoço do dia 12.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="6mkMj4xM4bQ" role="button" tabindex="0" aria-label="Assistir: dormindo em um templo em Koyasan"><img src="https://i.ytimg.com/vi/6mkMj4xM4bQ/hqdefault.jpg" alt="Templo em Koyasan" loading="lazy"><span class="langtag">en</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Koyasan · Hangry By Nature</div><h3>Dormindo no templo com os monges</h3><p>Uma família mostra na prática o shukubo: Okunoin, a comida dos monges e a cerimônia da manhã.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="ii13vHUOXac" role="button" tabindex="0" aria-label="Assistir: Kyoto walking tour"><img src="https://i.ytimg.com/vi/ii13vHUOXac/hqdefault.jpg" alt="Ruas de Kyoto" loading="lazy"><span class="langtag">4k · sem falas</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Kyoto · Flori Walks</div><h3>Kiyomizu-dera, Gion e Fushimi Inari</h3><p>Walking tour em 4K exatamente pelos três pontos do nosso dia 15 em Kyoto.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="yIMDgPKgN1w" role="button" tabindex="0" aria-label="Assistir: Arashiyama sob chuva"><img src="https://i.ytimg.com/vi/yIMDgPKgN1w/hqdefault.jpg" alt="Bambuzal de Arashiyama" loading="lazy"><span class="langtag">4k · sem falas</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Kyoto · Rambalac</div><h3>Arashiyama e o bambuzal</h3><p>Passeio contemplativo do mestre dos walking tours pelo bosque de bambu e o parque Kameyama.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="Hrl-5U_ozl8" role="button" tabindex="0" aria-label="Assistir: Shirakawa-go"><img src="https://i.ytimg.com/vi/Hrl-5U_ozl8/hqdefault.jpg" alt="Vila de Shirakawa-go" loading="lazy"><span class="langtag">pt-br</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Shirakawa-go · Luiz por aí</div><h3>A aldeia mais linda do Japão</h3><p>Vlog brasileiro pela vila gassho-zukuri, com dicas práticas de acesso e do que ver.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="uiJoaBW014k" role="button" tabindex="0" aria-label="Assistir: lugares imperdíveis de Hakone"><img src="https://i.ytimg.com/vi/uiJoaBW014k/hqdefault.jpg" alt="Hakone e o Monte Fuji" loading="lazy"><span class="langtag">pt-br</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Hakone · Coisas do Japão</div><h3>3 lugares imperdíveis de Hakone</h3><p>O lago Ashi com o torii, as vistas do Fuji e o circuito clássico — pelo canal dos nossos possíveis guias.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="R4B36TMMGp4" role="button" tabindex="0" aria-label="Assistir: caminhada noturna de Shibuya a Shinjuku"><img src="https://i.ytimg.com/vi/R4B36TMMGp4/hqdefault.jpg" alt="Neons de Tóquio à noite" loading="lazy"><span class="langtag">4k · sem falas</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Tóquio · Virtual Japan</div><h3>De Shibuya a Shinjuku à noite</h3><p>Os neons de Tóquio em 4K HDR — a atmosfera exata das nossas noites dos dias 22 e 23.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="bXdKQICrmrE" role="button" tabindex="0" aria-label="Assistir: cerejeiras no Shinjuku Gyoen"><img src="https://i.ytimg.com/vi/bXdKQICrmrE/hqdefault.jpg" alt="Cerejeiras no Shinjuku Gyoen" loading="lazy"><span class="langtag">en</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Tóquio · Live Japan</div><h3>Sakura no Shinjuku Gyoen</h3><p>O jardim do nosso dia 24 em plena floração — exatamente o que esperamos encontrar.</p></div>
+    </div>
+    <div class="card">
+      <div class="vid" data-id="8fr0jldN0ZM" role="button" tabindex="0" aria-label="Assistir: quanto custa Tóquio"><img src="https://i.ytimg.com/vi/8fr0jldN0ZM/hqdefault.jpg" alt="Ruas de Tóquio" loading="lazy"><span class="langtag">pt-br</span><div class="play"><span></span></div></div>
+      <div class="pad"><div class="tag">Tóquio · Gaby Coutinho</div><h3>Quanto custa e o que fazer em Tóquio</h3><p>Custos reais, comida e primeiras impressões do Japão — ótimo para calibrar o orçamento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="filmes" class="reveal">
+  <div class="sec-eyebrow">Cinema de bordo</div>
+  <h2>Filmes &amp; séries<span class="seal"></span></h2>
+  <p style="max-width:44rem;color:#3E3733">Uma curadoria para entrar no clima antes do embarque — cada título conversa com um pedaço do roteiro.</p>
+  <div class="grid g2" style="margin-top:1.4rem">
+    <div class="card"><div class="pad">
+      <div class="tag">Filme · 2023 · Wim Wenders</div><h3>Dias Perfeitos</h3>
+      <p>O retrato mais bonito da Tóquio de hoje: silenciosa, gentil e cheia de pequenos rituais. Depois dele, vocês vão reparar em cada detalhe da cidade.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: a Tóquio cotidiana dos dias 22–25</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Animação · 2001 · Hayao Miyazaki</div><h3>A Viagem de Chihiro</h3>
+      <p>O clássico do Studio Ghibli: a casa de banhos do filme nasceu de onsens e hospedarias reais. Ao entrar no ryokan de Hakone, vocês vão pisar dentro do filme.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: a noite de onsen no Gora Kadan, 20/03</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Animação · 2016 · Makoto Shinkai</div><h3>Your Name.</h3>
+      <p>A animação mais apaixonante de Shinkai costura o contraste exato da nossa viagem: a metrópole acesa de um lado, o vilarejo de montanha do outro.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: Tóquio + as montanhas de Hida, vizinhas de Shirakawa-go</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Documentário · 2011 · David Gelb</div><h3>Jiro Dreams of Sushi</h3>
+      <p>Uma aula deliciosa sobre a devoção japonesa à perfeição, o shokunin. Depois dele, cada sushi da viagem vira cerimônia.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: Ginza e os balcões de Tóquio, 25/03</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Documentário · 2019 · Netflix</div><h3>Street Food: Ásia — ep. Osaka</h3>
+      <p>Meia hora de puro apetite sobre a cultura kuidaore ("comer até cair"): takoyaki, okonomiyaki e o carismático chef Toyo. O aquecimento oficial da primeira noite.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: Dotonbori, 11/03</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Série · 2016 · Netflix</div><h3>Midnight Diner: Tokyo Stories</h3>
+      <p>Episódios curtos e ternos, cada um em torno de um prato e um freguês do restaurantinho do Mestre. Um episódio por noite e vocês chegam ao Japão de coração aquecido.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: os becos de izakaya como Omoide Yokocho, 23/03</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Série · 2023 · Hirokazu Kore-eda</div><h3>Makanai: Cozinhando para a Casa Maiko</h3>
+      <p>O cotidiano de duas amigas numa casa de maikos em Kyoto: amizade, tradição e comidinhas de dar água na boca. Puro conforto.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: os becos de Gion, onde talvez cruzemos com maikos</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Filme · 2018 · Tatsushi Omori</div><h3>Every Day a Good Day</h3>
+      <p>Vinte anos de aprendizado do caminho do chá, com a inesquecível Kirin Kiki como mestra. A cerimônia em Uji deixa de ser "só um chá" e vira meditação.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: a cerimônia na casa Taihoan, 18/03</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Filme · 2008 · Yojiro Takita</div><h3>A Partida</h3>
+      <p>Vencedor do Oscar de filme estrangeiro, mergulha na espiritualidade japonesa, na impermanência e no valor dos ritos — emocionante sem ser pesado.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: a noite no templo de Koyasan, 13/03</p>
+    </div></div>
+    <div class="card"><div class="pad">
+      <div class="tag">Filme · 1953 · Yasujiro Ozu</div><h3>Era uma Vez em Tóquio</h3>
+      <p>No clássico de Ozu, um casal idoso viaja do interior para visitar os filhos em Tóquio — o espelho em preto e branco da nossa própria viagem em família.</p>
+      <p class="mono" style="font-size:.78rem;color:var(--moss);margin-top:.6rem">no roteiro: a viagem inteira — e o jantar de despedida</p>
+    </div></div>
   </div>
 </section>
 
@@ -418,6 +663,21 @@ html.js .reveal.on{opacity:1;transform:none}
 document.documentElement.classList.add('js');
 const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target);} }), { threshold: .08 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+document.querySelectorAll('.vid').forEach(v => {
+  const load = () => {
+    const f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + v.dataset.id + '?autoplay=1&rel=0';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen = true;
+    f.title = v.getAttribute('aria-label') || 'Vídeo';
+    v.innerHTML = '';
+    v.appendChild(f);
+    v.style.cursor = 'default';
+  };
+  v.addEventListener('click', load);
+  v.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); load(); } });
+});
 </script>
 </body>
 </html>
